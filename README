@@ -1,8 +1,8 @@
 server.c and client.c - implementation of go-back-n ARQ in C
-by Elijah Jordan Montgomery <elijah.montgomery@uky.edu>
+by Prateek Kumar Singh  <20cs01003@iitbbs.ac.in>
 
-Server.c implements a reliable data transfer over UDP in C
-client.c implements a reliable data transfer client over UDP in C
+Server.c implements a reliable data transfer over TCP in C
+client.c implements a reliable data transfer client over TCP in C
 
 Both of these programs use the go-back-n ARQ, that is lost data is
 automatically resent. These programs are hardcoded to transfer
