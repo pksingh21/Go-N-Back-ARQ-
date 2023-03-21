@@ -38,6 +38,7 @@ int
 main (int argc, char *argv[])
 {
   int sock;			/* Socket descriptor */
+  int df=0;
   struct sockaddr_in gbnServAddr;	/* Echo server address */
   struct sockaddr_in fromAddr;	/* Source address of echo */
   unsigned short gbnServPort;	/* Echo server port */

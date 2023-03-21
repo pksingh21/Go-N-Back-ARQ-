@@ -146,7 +146,7 @@ sdist
 develop-eggs
 .installed.cfg
 
-# Installer logs
+# Installer logs for C or python
 pip-log.txt
 
 # Unit test / coverage reports
