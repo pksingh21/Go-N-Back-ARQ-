@@ -1,13 +1,11 @@
 /* server.c - go-back-n server implementation in C
- * by Elijah Jordan Montgomery <elijah.montgomery@uky.edu>
- * based on code by Kenneth Calvert
+ * by Prateek Kumar Singh <20cs01003@iitbbs.ac.in>
  *
  * This implements a go-back-n server that implements reliable data
- * transfer over UDP using the go-back-n ARQ with variable chunk size
+ * transfer over TCP using the go-back-n ARQ with variable chunk size
  *
  * for debug purposes, a loss rate can also be specified
  * compile with "gcc -o server server.c"
- * tested on UKY CS Multilab
  */
 #include "gbnpacket.c" /* defines go-back-n packet structure */
 #include <arpa/inet.h> /* for sockaddr_in and inet_ntoa() */
