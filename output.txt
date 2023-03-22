@@ -1,0 +1,192 @@
+string read from file : hello i am prateek i am studying btech and regretting every moment of it
+yet since companies pay well so i am doing it else there's no option
+created socketsending packet 0 packet_sent 0 packet_received -1
+sending packet 1 packet_sent 1 packet_received -1
+sending packet 2 packet_sent 2 packet_received -1
+timed out, 29 more tries...
+sending packet 0 packet_sent 2 packet_received -1
+sending packet 1 packet_sent 2 packet_received -1
+sending packet 2 packet_sent 2 packet_received -1
+timed out, 28 more tries...
+sending packet 0 packet_sent 2 packet_received -1
+sending packet 1 packet_sent 2 packet_received -1
+sending packet 2 packet_sent 2 packet_received -1
+timed out, 27 more tries...
+sending packet 0 packet_sent 2 packet_received -1
+sending packet 1 packet_sent 2 packet_received -1
+sending packet 2 packet_sent 2 packet_received -1
+timed out, 26 more tries...
+sending packet 0 packet_sent 2 packet_received -1
+sending packet 1 packet_sent 2 packet_received -1
+sending packet 2 packet_sent 2 packet_received -1
+timed out, 25 more tries...
+sending packet 0 packet_sent 2 packet_received -1
+sending packet 1 packet_sent 2 packet_received -1
+sending packet 2 packet_sent 2 packet_received -1
+timed out, 24 more tries...
+sending packet 0 packet_sent 2 packet_received -1
+sending packet 1 packet_sent 2 packet_received -1
+sending packet 2 packet_sent 2 packet_received -1
+received ack
+timed out, 29 more tries...
+sending packet 0 packet_sent 2 packet_received 0
+sending packet 1 packet_sent 2 packet_received 0
+sending packet 2 packet_sent 2 packet_received 0
+timed out, 28 more tries...
+sending packet 0 packet_sent 2 packet_received 0
+sending packet 1 packet_sent 2 packet_received 0
+sending packet 2 packet_sent 2 packet_received 0
+timed out, 27 more tries...
+sending packet 0 packet_sent 2 packet_received 0
+sending packet 1 packet_sent 2 packet_received 0
+sending packet 2 packet_sent 2 packet_received 0
+received ack
+timed out, 29 more tries...
+sending packet 1 packet_sent 2 packet_received 1
+sending packet 2 packet_sent 2 packet_received 1
+sending packet 3 packet_sent 3 packet_received 1
+received ack
+timed out, 29 more tries...
+sending packet 2 packet_sent 3 packet_received 2
+sending packet 3 packet_sent 3 packet_received 2
+sending packet 4 packet_sent 4 packet_received 2
+timed out, 28 more tries...
+sending packet 2 packet_sent 4 packet_received 2
+sending packet 3 packet_sent 4 packet_received 2
+sending packet 4 packet_sent 4 packet_received 2
+received ack
+timed out, 29 more tries...
+sending packet 3 packet_sent 4 packet_received 3
+sending packet 4 packet_sent 4 packet_received 3
+sending packet 5 packet_sent 5 packet_received 3
+received ack
+timed out, 29 more tries...
+sending packet 4 packet_sent 5 packet_received 4
+sending packet 5 packet_sent 5 packet_received 4
+sending packet 6 packet_sent 6 packet_received 4
+timed out, 28 more tries...
+sending packet 4 packet_sent 6 packet_received 4
+sending packet 5 packet_sent 6 packet_received 4
+sending packet 6 packet_sent 6 packet_received 4
+timed out, 27 more tries...
+sending packet 4 packet_sent 6 packet_received 4
+sending packet 5 packet_sent 6 packet_received 4
+sending packet 6 packet_sent 6 packet_received 4
+timed out, 26 more tries...
+sending packet 4 packet_sent 6 packet_received 4
+sending packet 5 packet_sent 6 packet_received 4
+sending packet 6 packet_sent 6 packet_received 4
+timed out, 25 more tries...
+sending packet 4 packet_sent 6 packet_received 4
+sending packet 5 packet_sent 6 packet_received 4
+sending packet 6 packet_sent 6 packet_received 4
+timed out, 24 more tries...
+sending packet 4 packet_sent 6 packet_received 4
+sending packet 5 packet_sent 6 packet_received 4
+sending packet 6 packet_sent 6 packet_received 4
+timed out, 23 more tries...
+sending packet 4 packet_sent 6 packet_received 4
+sending packet 5 packet_sent 6 packet_received 4
+sending packet 6 packet_sent 6 packet_received 4
+timed out, 22 more tries...
+sending packet 4 packet_sent 6 packet_received 4
+sending packet 5 packet_sent 6 packet_received 4
+sending packet 6 packet_sent 6 packet_received 4
+timed out, 21 more tries...
+sending packet 4 packet_sent 6 packet_received 4
+sending packet 5 packet_sent 6 packet_received 4
+sending packet 6 packet_sent 6 packet_received 4
+timed out, 20 more tries...
+sending packet 4 packet_sent 6 packet_received 4
+sending packet 5 packet_sent 6 packet_received 4
+sending packet 6 packet_sent 6 packet_received 4
+received ack
+timed out, 29 more tries...
+sending packet 5 packet_sent 6 packet_received 5
+sending packet 6 packet_sent 6 packet_received 5
+sending packet 7 packet_sent 7 packet_received 5
+received ack
+timed out, 29 more tries...
+sending packet 6 packet_sent 7 packet_received 6
+sending packet 7 packet_sent 7 packet_received 6
+sending packet 8 packet_sent 8 packet_received 6
+received ack
+timed out, 29 more tries...
+sending packet 7 packet_sent 8 packet_received 7
+sending packet 8 packet_sent 8 packet_received 7
+sending packet 9 packet_sent 9 packet_received 7
+timed out, 28 more tries...
+sending packet 7 packet_sent 9 packet_received 7
+sending packet 8 packet_sent 9 packet_received 7
+sending packet 9 packet_sent 9 packet_received 7
+timed out, 27 more tries...
+sending packet 7 packet_sent 9 packet_received 7
+sending packet 8 packet_sent 9 packet_received 7
+sending packet 9 packet_sent 9 packet_received 7
+timed out, 26 more tries...
+sending packet 7 packet_sent 9 packet_received 7
+sending packet 8 packet_sent 9 packet_received 7
+sending packet 9 packet_sent 9 packet_received 7
+timed out, 25 more tries...
+sending packet 7 packet_sent 9 packet_received 7
+sending packet 8 packet_sent 9 packet_received 7
+sending packet 9 packet_sent 9 packet_received 7
+timed out, 24 more tries...
+sending packet 7 packet_sent 9 packet_received 7
+sending packet 8 packet_sent 9 packet_received 7
+sending packet 9 packet_sent 9 packet_received 7
+received ack
+timed out, 29 more tries...
+sending packet 8 packet_sent 9 packet_received 8
+sending packet 9 packet_sent 9 packet_received 8
+sending packet 10 packet_sent 10 packet_received 8
+received ack
+timed out, 29 more tries...
+sending packet 9 packet_sent 10 packet_received 9
+sending packet 10 packet_sent 10 packet_received 9
+sending packet 11 packet_sent 11 packet_received 9
+timed out, 28 more tries...
+sending packet 9 packet_sent 11 packet_received 9
+sending packet 10 packet_sent 11 packet_received 9
+sending packet 11 packet_sent 11 packet_received 9
+timed out, 27 more tries...
+sending packet 9 packet_sent 11 packet_received 9
+sending packet 10 packet_sent 11 packet_received 9
+sending packet 11 packet_sent 11 packet_received 9
+received ack
+timed out, 29 more tries...
+sending packet 10 packet_sent 11 packet_received 10
+sending packet 11 packet_sent 11 packet_received 10
+sending packet 12 packet_sent 12 packet_received 10
+timed out, 28 more tries...
+sending packet 10 packet_sent 12 packet_received 10
+sending packet 11 packet_sent 12 packet_received 10
+sending packet 12 packet_sent 12 packet_received 10
+timed out, 27 more tries...
+sending packet 10 packet_sent 12 packet_received 10
+sending packet 11 packet_sent 12 packet_received 10
+sending packet 12 packet_sent 12 packet_received 10
+received ack
+timed out, 29 more tries...
+sending packet 11 packet_sent 12 packet_received 11
+sending packet 12 packet_sent 12 packet_received 11
+sending packet 13 packet_sent 13 packet_received 11
+timed out, 28 more tries...
+sending packet 11 packet_sent 13 packet_received 11
+sending packet 12 packet_sent 13 packet_received 11
+sending packet 13 packet_sent 13 packet_received 11
+received ack
+timed out, 29 more tries...
+sending packet 12 packet_sent 13 packet_received 12
+sending packet 13 packet_sent 13 packet_received 12
+sending packet 14 packet_sent 14 packet_received 12
+timed out, 28 more tries...
+sending packet 12 packet_sent 14 packet_received 12
+sending packet 13 packet_sent 14 packet_received 12
+sending packet 14 packet_sent 14 packet_received 12
+timed out, 27 more tries...
+sending packet 12 packet_sent 14 packet_received 12
+sending packet 13 packet_sent 14 packet_received 12
+sending packet 14 packet_sent 14 packet_received 12
+timed out, 26 more tries...
+sending packet 12 packet_sent 14 

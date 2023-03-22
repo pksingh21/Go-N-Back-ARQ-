@@ -18,10 +18,10 @@
 #include <stdlib.h>     /* for atoi() and exit() */
 #include <string.h>     /* for memset() */
 #include <sys/socket.h> /* for socket(), connect(), sendto(), and recvfrom() */
-#include <unistd.h>     /* for close() and alarm() */
-
+#include <time.h>
+#include <unistd.h>    /* for close() and alarm() */
 #define TIMEOUT_SECS 4 /* Seconds between retransmits */
-#define MAXTRIES 30    /* Tries before giving up */
+#define MAXTRIES 100   /* Tries before giving up */
 
 int tries = 0; /* Count of times sent - GLOBAL for signal-handler access */
 int base = 0;
@@ -33,8 +33,43 @@ void CatchAlarm(int ignored);          /* Handler for SIGALRM */
 int max(int a, int b); /* macros that most compilers include - used for
                           calculating a few things */
 int min(int a, int b); /* I think gcc includes them but this is to be safe */
+char *gen_rdm_bytestream(size_t num_bytes) {
+  char *stream = malloc(num_bytes);
+  size_t i;
 
+  for (i = 0; i < num_bytes; i++) {
+    stream[i] = rand();
+  }
+
+  return stream;
+}
 int main(int argc, char *argv[]) {
+  FILE *file;
+  char *fileBuffer;
+  long size;
+  srand(time(NULL));
+  file = fopen("example.txt", "rb");
+  if (!file) {
+    printf("Error opening file\n");
+    return 1;
+  }
+  fseek(file, 0, SEEK_END);
+  size = ftell(file);
+  rewind(file);
+  fileBuffer = (char *)malloc(sizeof(char) * (size + 1));
+  if (!fileBuffer) {
+    printf("Error allocating memory\n");
+    fclose(file);
+    return 1;
+  }
+  fileBuffer = gen_rdm_bytestream(100);
+  fileBuffer[101] = '\0';
+  // fread(fileBuffer, sizeof(char), size, file);
+
+  // Close file
+  fclose(file);
+
+  // Print text array
   int sock; /* Socket descriptor */
   int df = 0;
   struct sockaddr_in gbnServAddr; /* Echo server address */
@@ -47,9 +82,12 @@ int main(int argc, char *argv[]) {
   int packet_received = -1;       /* highest ack received */
   int packet_sent = -1;           /* highest packet sent */
   extern char buffer[];           /* buffer for data */
-  const int datasize = 8192;      /* data buffer size */
-  int chunkSize;                  /* chunk size in bytes */
-  int nPackets = 0;               /* number of packets to send */
+  buffer[201] = '\0';
+  // const int datasize = 8192; /* data buffer size */
+  const int datasize = 201; /* data buffer size */
+  int chunkSize;            /* chunk size in bytes */
+  int nPackets = 0;         /* number of packets to send */
+  int totalTransmission = 0;
 
   if (argc != 5) /* Test for correct number of arguments */
   {
@@ -60,6 +98,7 @@ int main(int argc, char *argv[]) {
     exit(1);
   }
 
+  printf("string read from file : %s\n", buffer);
   servIP = argv[1];            /* First arg:  server IP address (dotted quad) */
   chunkSize = atoi(argv[3]);   /* Third arg: string to echo */
   gbnServPort = atoi(argv[2]); /* Use given port */
@@ -109,6 +148,7 @@ int main(int argc, char *argv[]) {
           memset(&currpacket, 0, sizeof(currpacket));
           printf("sending packet %d packet_sent %d packet_received %d\n",
                  base + ctr, packet_sent, packet_received);
+          totalTransmission++;
 
           currpacket.type = htonl(1); /*convert to network endianness */
           currpacket.seq_no = htonl(base + ctr);
@@ -182,6 +222,7 @@ int main(int argc, char *argv[]) {
     sendto(sock, &teardown, (sizeof(int) * 3), 0,
            (struct sockaddr *)&gbnServAddr, sizeof(gbnServAddr));
   }
+  printf("total transmissions : %d", totalTransmission);
   close(sock); /* close socket */
   exit(0);
 }
