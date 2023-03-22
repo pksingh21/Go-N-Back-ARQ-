@@ -82,9 +82,9 @@ int main(int argc, char *argv[]) {
   int packet_received = -1;       /* highest ack received */
   int packet_sent = -1;           /* highest packet sent */
   extern char buffer[];           /* buffer for data */
-  buffer[201] = '\0';
+  buffer[901] = '\0';
   // const int datasize = 8192; /* data buffer size */
-  const int datasize = 201; /* data buffer size */
+  const int datasize = 901; /* data buffer size */
   int chunkSize;            /* chunk size in bytes */
   int nPackets = 0;         /* number of packets to send */
   int totalTransmission = 0;
